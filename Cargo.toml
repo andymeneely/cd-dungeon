@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 bracket-lib = "*"
 rltk = "*"
+specs = "0.17.0"
+specs-derive = "0.4.1"
