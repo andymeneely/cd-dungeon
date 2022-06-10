@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 require 'thor'
+require_relative 'play'
 
 module Cd
   module Dungeon
@@ -18,6 +17,13 @@ module Cd
         puts "v#{Cd::Dungeon::VERSION}"
       end
       map %w(--version -v) => :version
+
+      desc 'delve', 'cd-dungeon delve'
+      def delve
+        Delver.new.run
+      end
+
+
     end
   end
 end
