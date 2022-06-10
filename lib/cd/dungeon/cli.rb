@@ -1,5 +1,5 @@
 require 'thor'
-require_relative 'play'
+require_relative 'delver'
 
 module Cd
   module Dungeon
@@ -20,6 +20,7 @@ module Cd
 
       desc 'delve', 'cd-dungeon delve'
       def delve
+        
         Delver.new.run
       end
 
